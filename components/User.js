@@ -30,8 +30,6 @@ cart {
 */
 export function useUser() {
   const { data } = useQuery(CURRENT_USER_QUERY);
-  console.log('useUser');
-  console.log(data);
   return data?.authenticatedItem;
 }
 
